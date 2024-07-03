@@ -61,7 +61,8 @@
   "theiaPlugins": {
     "eclipse-theia.builtin-extension-pack": "https://open-vsx.org/api/eclipse-theia/builtin-extension-pack/1.88.1/file/eclipse-theia.builtin-extension-pack-1.88.1.vsix",
     "vadimcn.vscode-lldb": "https://open-vsx.org/api/vadimcn/vscode-lldb/1.10.0/file/vadimcn.vscode-lldb-1.10.0.vsix",
-    "rust-lang.rust-analyzer": "https://open-vsx.org/api/rust-lang/rust-analyzer/linux-x64/0.4.2021/file/rust-lang.rust-analyzer-0.4.2021@linux-x64.vsix"
+    "rust-lang.rust-analyzer": "https://open-vsx.org/api/rust-lang/rust-analyzer/linux-x64/0.4.2021/file/rust-lang.rust-analyzer-0.4.2021@linux-x64.vsix",
+    "ms-vscode.cpptools-themes": "https://open-vsx.org/api/ms-vscode/cpptools-themes/1.0.0/file/ms-vscode.cpptools-themes-1.0.0.vsix"
   },
   "theiaPluginsExcludeIds": [
     "ms-vscode.js-debug-companion",
@@ -124,7 +125,16 @@
     "vscode.simple-browser",
     "vscode.sql",
     "vscode.swift",
+    "vscode.theme-abyss",
+    "vscode.theme-defaults",
+    "vscode.theme-kimbie-dark",
+    "vscode.theme-monokai",
+    "vscode.theme-monokai-dimmed",
+    "vscode.theme-quietlight",
     "vscode.theme-red",
+    "vscode.vscode-theme-seti",
+    "vscode.theme-solarized-dark",
+    "vscode.theme-solarized-light",
     "vscode.theme-tomorrow-night-blue",
     "vscode.tunnel-forwarding",
     "vscode.typescript",
