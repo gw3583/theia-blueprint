@@ -61,8 +61,21 @@ ENV SHELL=/bin/bash \
 # Use installed git instead of dugite
 ENV USE_LOCAL_GIT true
 
+# Customizations for rust-devel
+USER root
+RUN usermod -u 2000 node
+RUN usermod -u 1000 theia
+RUN apt-get dist-upgrade -y
+RUN apt-get install -y build-essential curl cmake libglfw3-dev libxinerama-dev libxcursor-dev libxi-dev
+
 # Swtich to Theia user
 USER theia
+
+# Set up rust
+RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
+ENV PATH="/home/theia/.cargo/bin:${PATH}"
+RUN rustup component add rust-analyzer
+
 WORKDIR /home/theia/applications/browser
 
 # Launch the backend application via node
